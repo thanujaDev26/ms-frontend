@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PRODUCT_BASE = "http://localhost:3001/api/products";
+const PRODUCT_BASE = import.meta.env.VITE_PRODUCT_API;
 
 export const getAllProducts = () => axios.get(PRODUCT_BASE);
 
